@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background: #0f0a1e;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f1f5f9;
+  overscroll-behavior: none;
+}
+
+#root {
+  min-height: 100vh;
+  background: #0f0a1e;
+}
+
+/* Scrollbar oculta globalmente */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Selección de texto */
+::selection {
+  background: #7c3aed50;
+  color: #f1f5f9;
+}
+
+/* Focus visible para accesibilidad */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+/* Placeholder color */
+input::placeholder,
+textarea::placeholder {
+  color: #475569;
+}
+
+/* Transiciones globales */
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
